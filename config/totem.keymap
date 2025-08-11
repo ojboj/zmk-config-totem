@@ -47,6 +47,11 @@
             key-positions = <1 0>;
             timeout-ms = <50>;
         };
+
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <8 9>;
+        };
     };
 
     behaviors {
