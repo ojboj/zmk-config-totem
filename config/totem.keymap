@@ -103,10 +103,10 @@
 
         symbol {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp MINUS             &kp EQUAL              &kp SLASH             &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+            &trans     &trans  &trans    &trans            &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+            &trans     &trans  &trans    &trans            &trans    &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH
+&kp LSHIFT  &kp LCTRL  &trans  &trans    &trans            &trans    &trans  &trans  &kp MINUS             &kp EQUAL              &trans         &kp RIGHT_SHIFT
+                               &kp LALT  &kp LEFT_COMMAND  &trans    &trans  &trans  &trans
             >;
         };
 
