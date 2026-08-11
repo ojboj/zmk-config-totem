@@ -33,7 +33,7 @@
         compatible = "zmk,combos";
 
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
@@ -41,19 +41,19 @@
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 7>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <1 0>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <8 9>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         TOGGLE_BT_LAYER {
