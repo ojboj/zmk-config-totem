@@ -41,6 +41,7 @@
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 7>;
+            timeout-ms = <50>;
         };
 
         combo_tab {
@@ -52,6 +53,7 @@
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <8 9>;
+            timeout-ms = <50>;
         };
 
         TOGGLE_BT_LAYER {
