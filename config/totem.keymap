@@ -11,6 +11,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -51,6 +52,11 @@
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <8 9>;
+        };
+
+        TOGGLE_BT_LAYER {
+            bindings = <&tog 3>;
+            key-positions = <35 34>;
         };
     };
 
@@ -116,6 +122,15 @@
            &trans        &trans        &trans        &trans        &trans    &trans        &kp LEFT      &kp UP_ARROW  &kp RIGHT     &trans
 &kp LSHFT  &kp LCTRL     &trans        &trans        &trans        &trans    &trans        &trans        &kp DOWN      &trans        &trans        &kp RSHIFT
                                        &kp LALT      &kp LCMD      &trans    &trans        &trans        &trans
+            >;
+        };
+
+        PERIPHERAL {
+            bindings = <
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans      &trans  &trans          &trans  &trans
+        &trans        &trans        &trans        &trans        &trans          &trans      &trans  &trans          &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans      &trans  &trans          &trans  &trans  &trans
+                                    &trans        &trans        &trans          &bt BT_CLR  &trans  &bt BT_CLR_ALL
             >;
         };
     };
